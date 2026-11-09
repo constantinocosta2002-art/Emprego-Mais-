@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #102B55;
+    --color-primary-dark: #0B1E3D;
+    --color-primary-light: #183C73;
+    --color-orange: #FF8A00;
+    --color-orange-hover: #E67A00;
+    --color-orange-light: #FFF4E5;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #F8FAFC;
+    color: #0F172A;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF8A00;
+}
+
+/* Custom brand gradients and utilities */
+.bg-navy-main {
+  background-color: #102B55;
+}
+
+.text-navy-main {
+  color: #102B55;
+}
+
+.bg-orange-brand {
+  background-color: #FF8A00;
+}
+
+.text-orange-brand {
+  color: #FF8A00;
+}
+
+.border-navy-main {
+  border-color: #102B55;
+}
+
+.border-orange-brand {
+  border-color: #FF8A00;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #102B55 0%, #0B1E3D 55%, #163B70 100%);
+}
+
+.card-hover-effect {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px -10px rgba(16, 43, 85, 0.12);
+}

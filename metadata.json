@@ -1,0 +1,6 @@
+{
+  "name": "EMPREGO+",
+  "description": "Plataforma Nacional de Emprego em Angola fundada por Constantino José da Costa. Oportunidades verificadas e atualizadas para todas as 21 províncias.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

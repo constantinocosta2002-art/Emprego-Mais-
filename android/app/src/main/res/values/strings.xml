@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">VAMOS À LUTA</string>
+    <string name="title_activity_main">VAMOS À LUTA</string>
+    <string name="package_name">ao.vamosaluta.app</string>
+    <string name="custom_url_scheme">ao.vamosaluta.app</string>
+</resources>

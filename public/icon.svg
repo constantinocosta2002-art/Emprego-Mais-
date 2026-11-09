@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#183C73" />
+      <stop offset="50%" stop-color="#102B55" />
+      <stop offset="100%" stop-color="#0B1E3D" />
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF9F2E" />
+      <stop offset="100%" stop-color="#FF8A00" />
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="110" fill="url(#navyGrad)" />
+  <rect x="14" y="14" width="484" height="484" rx="98" fill="none" stroke="#FF8A00" stroke-width="4" opacity="0.3" />
+
+  <!-- Central Emblem: Stylized E and + -->
+  <g filter="url(#subtleShadow)">
+    <!-- Rounded Container -->
+    <rect x="96" y="96" width="320" height="320" rx="64" fill="#0E2345" stroke="#1F4782" stroke-width="4" />
+
+    <!-- Big Letter 'E' -->
+    <path d="M156 160 H260 V196 H198 V236 H248 V272 H198 V316 H260 V352 H156 Z" fill="#FFFFFF" />
+
+    <!-- Vibrant Orange Plus '+' Sign -->
+    <path d="M310 220 H346 V176 H382 V220 H426 V256 H382 V300 H346 V256 H310 Z" fill="url(#orangeGrad)" />
+  </g>
+
+  <!-- Angola Star Accent -->
+  <circle cx="256" cy="72" r="5" fill="#FF8A00" />
+
+  <!-- Bottom Brand Text -->
+  <text x="256" y="448" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="900" font-size="28" letter-spacing="4" fill="#FFFFFF" text-anchor="middle">
+    EMPREGO<tspan fill="#FF8A00">+</tspan>
+  </text>
+  <text x="256" y="474" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-weight="700" font-size="12" letter-spacing="3" fill="#94A3B8" text-anchor="middle">
+    21 PROVÍNCIAS • ANGOLA
+  </text>
+</svg>

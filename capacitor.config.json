@@ -1,0 +1,13 @@
+{
+  "appId": "ao.empregoplus.app",
+  "appName": "EMPREGO+",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "backgroundColor": "#102B55",
+    "allowMixedContent": false
+  }
+}

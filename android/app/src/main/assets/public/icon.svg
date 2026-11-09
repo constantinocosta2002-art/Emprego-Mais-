@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE885" />
+      <stop offset="35%" stop-color="#D4AF37" />
+      <stop offset="70%" stop-color="#AA7C11" />
+      <stop offset="100%" stop-color="#5B4002" />
+    </linearGradient>
+    <linearGradient id="goldAccent" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="50%" stop-color="#FCD34D" />
+      <stop offset="100%" stop-color="#FFFBEB" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141923" />
+      <stop offset="50%" stop-color="#0B0F17" />
+      <stop offset="100%" stop-color="#05070A" />
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background base -->
+  <rect width="512" height="512" rx="110" fill="url(#bgGrad)" />
+  
+  <!-- Outer Gold Border -->
+  <rect x="16" y="16" width="480" height="480" rx="98" fill="none" stroke="url(#goldGrad)" stroke-width="6" opacity="0.85" />
+  <circle cx="256" cy="256" r="215" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-dasharray="6,6" opacity="0.4" />
+
+  <!-- Shield / Crest Silhouette -->
+  <path d="M256 75 L385 130 C385 270 256 385 256 405 C256 385 127 270 127 130 Z" 
+        fill="#0D121C" stroke="url(#goldGrad)" stroke-width="4" filter="url(#goldGlow)" />
+
+  <!-- Stylized "V" and upward financial growth arrows -->
+  <!-- Left wing of V -->
+  <path d="M165 170 L235 345 L256 345 L210 170 Z" fill="url(#goldGrad)" />
+  <!-- Right wing of V (elevated with arrow spearhead) -->
+  <path d="M302 170 L256 345 L277 345 L347 170 Z" fill="url(#goldAccent)" />
+
+  <!-- Central Dynamic Arrow Up -->
+  <path d="M256 125 L300 185 L272 185 L272 275 L240 275 L240 185 L212 185 Z" fill="url(#goldGrad)" />
+
+  <!-- Kwanza Emblem / Central Star Ring -->
+  <circle cx="256" cy="285" r="26" fill="#0B0F17" stroke="url(#goldAccent)" stroke-width="3" />
+  <text x="256" y="293" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="20" fill="#FCD34D" text-anchor="middle">Kz</text>
+
+  <!-- Brand Signature Arc -->
+  <text x="256" y="445" font-family="'Cinzel', serif" font-weight="800" font-size="24" letter-spacing="6" fill="#E6C665" text-anchor="middle">
+    VAMOS À LUTA
+  </text>
+  <text x="256" y="470" font-family="'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="11" letter-spacing="3" fill="#9CA3AF" text-anchor="middle">
+    CONSTANTINO COSTA
+  </text>
+</svg>
